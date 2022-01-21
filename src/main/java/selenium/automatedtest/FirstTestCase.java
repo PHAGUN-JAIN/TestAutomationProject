@@ -1,11 +1,11 @@
-package simpleCli;
+package selenium.automatedtest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Main {
+public class FirstTestCase {
 	public static void main(String[] args) {
 		
 		//Setting system properties of ChromeDriver
@@ -25,9 +25,9 @@ public class Main {
 		title = driver.getTitle();
 		actualURL = driver.getCurrentUrl();
 		System.out.println("The title of the page is => " + title);
-		System.out.println("The current url is =>" + actualURL);
+		System.out.println("The current url is => " + actualURL);
 		
-		
+		driver.close();
 	}
 
 }
