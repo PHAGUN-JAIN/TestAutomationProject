@@ -12,6 +12,7 @@ public class ThirdTestCase {
 		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
+		driver.manage().window().fullscreen();
 		driver.get("https://www.amazon.in/");
 		
 		WebElement searchbar = driver.findElement(By.id("twotabsearchtextbox"));
