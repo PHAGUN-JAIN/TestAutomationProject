@@ -1,20 +1,25 @@
-package selenium.automatedtest;
+package selenium.automatedtestFirefox;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FourthTestCase {
+public class FourthTestClass {
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		int testCounter =0;
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\omgill\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\omgill\\Downloads\\geckodriver-v0.30.0-win64\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
 		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://amazon.in/");
 		
 		WebElement searchBar = driver.findElement(By.id("twotabsearchtextbox"));
@@ -79,7 +84,6 @@ public class FourthTestCase {
 		
 		driver.switchTo().window(chromeTabs.get(0));
 		driver.quit();
-		
 	}
 
 }
