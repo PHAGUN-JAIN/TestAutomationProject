@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.automatedtest.Testng.FourthTestCase">
+      <class name="selenium.automatedtest.Testng.LoginTestWithDataProvider">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="test8"/>
+          <include name="loginTest" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- selenium.automatedtest.Testng.FourthTestCase -->
+      </class> <!-- selenium.automatedtest.Testng.LoginTestWithDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
