@@ -42,11 +42,9 @@ public class loginData {
 	  Object[][] data = new Object[3][4];
 	  
 	  data[0][0] = "500076430@stu.upes.ac.in";
-<<<<<<< HEAD
+
 	  data[0][1] = "";
-=======
-	  data[0][1] = "Phagun#123";
->>>>>>> 9a8613aacd455540599f7da0b90af598c76152c0
+	  data[0][1] = "";
 	  data[0][2] = "chrome";
 	  data[0][3] = "98.0.4758.102";
 	  
