@@ -1,6 +1,5 @@
 package selenium.automatedtest.Testng;
 
-import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
 public class loginData {
@@ -42,8 +41,6 @@ public class loginData {
 	  Object[][] data = new Object[3][4];
 	  
 	  data[0][0] = "500076430@stu.upes.ac.in";
-
-	  data[0][1] = "";
 	  data[0][1] = "";
 	  data[0][2] = "chrome";
 	  data[0][3] = "98.0.4758.102";
